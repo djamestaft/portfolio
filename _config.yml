@@ -22,3 +22,5 @@ sass:
   load_paths:
     - bower_components
   style: compressed
+
+theme: jekyll-theme-cayman
