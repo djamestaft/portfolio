@@ -1,0 +1,39 @@
+---
+# Only the main Sass file needs front matter (the dashes are enough)
+---
+@charset "utf-8";
+
+// Our variables
+$base-font-family        : "PT Serif", serif;
+$base-font-size          : 20px;
+$base-font-weight        : 400;
+$heading-font-family     : "Roboto", Helvetica, Arial, sans-serif;
+$heading-font-family-alt : "Raleway", Helvetica, Arial, sans-serif;
+$small-font-size         : $base-font-size * 0.875;
+$base-line-height        : 1.7;
+
+$spacing-unit            : 30px;
+
+$text-color              : #111;
+$background-color        : #ebebeb;
+$brand-color             : #2a7ae2;
+
+$grey-color              : $background-color;
+$grey-color-dark         : darken($grey-color, 5%);
+$grey-color-darker       : darken($grey-color, 15%);
+$grey-color-darkest      : darken($grey-color, 25%);
+
+$mq-tablet               : 768px;
+$mq-desktop              : 998px;
+
+// Import partials from `sass_dir` (defaults to `_sass`)
+@import
+  "//fonts.googleapis.com/css?family=PT+Serif:400,400italic,700,700italic|Raleway:400,700,400italic,700italic|Roboto:400,300,700",
+  "normalize",
+  "font-awesome/font-awesome",
+  "util",
+  "base",
+  "cards",
+  "media",
+  "mosaic",
+  "components";
